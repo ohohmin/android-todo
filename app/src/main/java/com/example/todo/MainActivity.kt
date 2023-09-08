@@ -1,5 +1,6 @@
 package com.example.todo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
@@ -16,7 +17,9 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil
             .setContentView(this, R.layout.activity_main)
 
-        binding.title // ...
+        binding.writeButton.setOnClickListener {
+            startActivity(Intent(this, WriteActivity::class.java))
+        }
 
     }
 }
