@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="132dp"
-            android:text="등록"
+            android:text="수정"
             android:textColor="#545F71"
             android:textSize="32sp"
             android:textStyle="bold"
@@ -41,7 +41,7 @@
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="6dp"
             android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/write_button"
+            app:layout_constraintBottom_toTopOf="@+id/update_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title">
@@ -55,9 +55,7 @@
                     android:id="@+id/summary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="요약"
-                    android:inputType="text"
-                    android:maxLines="1" />
+                    android:hint="요약" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -69,9 +67,8 @@
                     android:id="@+id/date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="날짜"
                     android:inputType="date"
-                    android:maxLines="1" />
+                    android:hint="날짜" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -83,9 +80,7 @@
                     android:id="@+id/place"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="장소"
-                    android:inputType="text"
-                    android:maxLines="1" />
+                    android:hint="장소" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -97,14 +92,12 @@
                     android:id="@+id/content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="내용"
-                    android:lines="3"
-                    android:inputType="text" />
+                    android:hint="내용" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
         <Button
-            android:id="@+id/write_button"
+            android:id="@+id/update_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
