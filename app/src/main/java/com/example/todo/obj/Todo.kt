@@ -17,9 +17,11 @@ public class Todo(
     /**
      * 장소
      */
-    val place: String? = ""
+    val place: String? = "",
+    val content: String? = ""
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
+        parcel.readString(),
         parcel.readString(),
         parcel.readString(),
         parcel.readString()
@@ -34,6 +36,7 @@ public class Todo(
         p0.writeString(summary)
         p0.writeString(date)
         p0.writeString(place)
+        p0.writeString(content)
     }
 
     companion object CREATOR : Parcelable.Creator<Todo> {

@@ -57,7 +57,8 @@ class UpdateActivity : AppCompatActivity() {
                     Todo(
                         binding.summary.text.toString(),
                         binding.date.text.toString(),
-                        binding.place.text.toString()
+                        binding.place.text.toString(),
+                        binding.content.text.toString()
                     )
                 )
                 intent.putExtra("index", index)

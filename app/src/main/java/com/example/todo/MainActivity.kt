@@ -163,6 +163,6 @@ class MainActivity : AppCompatActivity() {
                 binding.list.adapter?.notifyDataSetChanged()
             }
 
-        }
+;        }
     }
 }

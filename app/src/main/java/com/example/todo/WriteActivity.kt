@@ -33,12 +33,15 @@ class WriteActivity : AppCompatActivity() {
                 Snackbar.make(it, "요약을 입력해주세요", 300).show()
             } else if (binding.date.text!!.isEmpty()) {
                 Snackbar.make(it, "날짜를 입력해주세요", 300).show()
+            } else if (binding.place.text!!.isEmpty()) {
+                Snackbar.make(it, "장소을 입력해주세요", 300).show()
+            }else if(binding.content.text!!.isEmpty()) {
+                Snackbar.make(it,"내용을 입력해주세요",300).show()
             }
+
             /**
              * 내용을 입력하지 않았을 때 체크하는 코드를 수정하세요
              */
-
-
 
             else {
                 val intent = Intent()
@@ -51,7 +54,8 @@ class WriteActivity : AppCompatActivity() {
                     Todo(
                         binding.summary.text.toString(),
                         binding.date.text.toString(),
-                        binding.place.text.toString()
+                        binding.place.text.toString(),
+                        binding.content.text.toString()
                     )
                 )
                 // 액티비티 성공 및 데이터 전달
